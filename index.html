@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <!-- 頁面基本設定 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antou - 個人介紹</title>
+    <style>
+        /* 全域樣式設定 */
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* 容器樣式 */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* 標題樣式 */
+        h1,
+        h2 {
+            font-weight: bold;
+            background: linear-gradient(45deg, #ffe600, #ff9800);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid #ffe600;
+            padding-bottom: 10px;
+        }
+
+        /* 文字與列表樣式 */
+        p,
+        li {
+            font-size: 1.1em;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            position: relative;
+            padding-left: 20px;
+            /* 增加左側內距以避免文字與箭頭重疊 */
+        }
+
+        li:before {
+            content: "\2192";
+            /* 使用 Unicode 箭頭符號 */
+            color: #ffe600;
+            position: absolute;
+            left: 0;
+        }
+
+        /* 超連結樣式 */
+        a {
+            color: #ffe600;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #ff9800;
+        }
+
+        /* 淡入動畫樣式 */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* link-box 樣式 */
+        .link-box {
+            border: 1px solid #ffe600;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 個人介紹區塊 -->
+        <section class="fade-in">
+            <a name="introduction"></a>
+            <h1>你好，我是 Antou</h1>
+            <p>大家好！我來自台灣宜蘭羅東，目前是一名高二的非學校型態實驗教育學生，專注於網路維運與資訊技術。</p>
+            <p>我對程式設計充滿熱情，熟悉 Python，並擔任<a href="https://ouoc.dev/" target="_blank">OuO Community</a>的負責人，致力於推動技術交流與社群發展。
+            </p>
+            <p>在政治立場上，我堅定支持台灣獨立，並身為<a href="https://newpowerparty.tw/" target="_blank">時代力量</a>的黨員，特別關注交通改革與社會議題。</p>
+            <p>我於 2008 年 8 月 29 日出生。如果你對我的理念或興趣感到共鳴，歡迎加入我的 <a href="#contacts">連結 / 聯絡資訊</a> 區塊，一起交流討論！</p>
+        </section>
+
+        <!-- 政治立場區塊 -->
+        <section class="fade-in">
+            <a name="political-views"></a>
+            <h2>政治立場</h2>
+            <ul>
+                <li>🏳️‍🌈 身為男同性戀，我支持 LGBTQ+ 權益，致力於推動多元平等的社會。</li>
+                <li>🏳️‍⚧️ 我堅定支持跨性別者的權益，認為每個人都應該擁有選擇自己身份的自由。</li>
+                <li>⚧️ 我關注婦幼安全，支持相關政策以保障他們的權益與福祉。</li>
+                <li>🏳 我支持台灣作為一個獨立主權國家的地位，並為此理念努力發聲。</li>
+                <li>🛹 我提倡交通改革，致力於打造更安全、更友善的交通環境。</li>
+                <li>☠️ 我在某些情況下支持廢除死刑，並認為應以更人道的方式處理犯罪問題。</li>
+            </ul>
+        </section>
+
+        <!-- 學經歷 / 出席活動 / 參與比賽區塊 -->
+        <section class="fade-in">
+            <a name="experience"></a>
+            <h2>學經歷 / 出席活動 / 參與比賽</h2>
+            <ul>
+                <li>宜蘭縣非學校型態實驗教育 (高二)</li>
+                <li>COSCUP 2023 - 會眾</li>
+                <li>2023 T貓盃全國資安基礎實務能力競賽 - 特優</li>
+                <li>113 環境知識競賽 - 宜蘭縣賽 第二名</li>
+                <li>113 環境知識競賽 - 全國賽 參賽</li>
+                <li>SITCON 2024 - 場務組</li>
+                <li>2024/03/23 行人零死亡推動聯盟 - 退回交通惡法 參與者</li>
+                <li>113 全國技能競賽 北區分區賽 - 資訊網路 參賽</li>
+                <li>台灣資安大會 2024 - 會眾</li>
+                <li>2024/05/24 青島東路 - 青鳥運動 參與者</li>
+                <li>2024/05/28 濟南路 - 青鳥運動 參與者</li>
+                <li>COSCUP 2024 - 製播組</li>
+                <li>g0v Summit 2024 - 場務組</li>
+                <li>113 一日資訊體驗營 - 副召</li>
+                <li>113 AIS3 Junior - 學員</li>
+                <li>SITCON 2025 - 會眾</li>
+                <li>台灣資安大會 2025 - 報名成功但因為太可愛被拒絕入場</li>
+                <li>2025/04/19 凱達格蘭大道 - 拒絕統戰，守護台灣 參與者</li>
+                <li>2025/04/20 羅東火車站 - 罷免舔共立委志工</li>
+                <li>COSCUP 2025 - 製播組</li>
+            </ul>
+        </section>
+
+        <!-- 證照區塊 -->
+        <section class="fade-in">
+            <a name="certifications"></a>
+            <h2>證照</h2>
+            <ul>
+                <li>勞動部 網路架設 丙級</li>
+                <li>勞動部 電腦硬體裝修 丙級</li>
+            </ul>
+        </section>
+
+        <!-- 團隊 / 工作 / 樂團區塊 -->
+        <section class="fade-in">
+            <a name="teams"></a>
+            <h2>團隊 / 工作 / 樂團</h2>
+            <ul>
+                <li>2024/10 - 2025/04 擔任和德昌股份有限公司員工，飲料站速度男。</li>
+                <li>2022/05 - 至今 擔任 OuO Community 的負責人、總管理及工程師，專注於社群運營與技術開發。</li>
+                <li>2023/10 - 至今 擔任蘇裔非的 Information Coordinator，協助資訊管理與溝通。</li>
+                <li>2024/10 - 至今 成為時代力量的黨員，積極參與政治與社會議題。</li>
+                <li>2024/10 - 至今 加入行人零死亡推動聯盟 (Taiwan Vision Zero Alliance)，致力於推動交通安全改革。</li>
+            </ul>
+        </section>
+
+        <!-- 連結 / 聯絡資訊區塊 -->
+        <section class="fade-in">
+            <a name="contacts"></a>
+            <h2>連結 / 聯絡資訊</h2>
+            <ul>
+                <li class="link-box">
+                    個人網站: <a href="https://antou.dev/" target="_blank"
+                        aria-label="前往 Antou 的個人網站">https://antou.dev/</a>
+                    <p>這邊是我的個人網站，做一些簡單的自我介紹</p>
+                </li>
+                <li class="link-box">
+                    OuO Community: <a href="https://ouoc.dev" target="_blank"
+                        aria-label="前往 OuO Community">https://ouoc.dev</a>
+                    <p>OuO Community 是我運營的一個資訊網路程式討論社群</p>
+                </li>
+                <li class="link-box">
+                    Discord: <a href="https://dc.antou.dev/" target="_blank"
+                        aria-label="加入 Antou 的 Discord">https://dc.antou.dev/</a>
+                    <p>加入我的 Discord 可以跟我即時通訊，聊天，討論，談合作</p>
+                </li>
+                <li class="link-box">
+                    Youtube: <a href="https://www.youtube.com/@zaitw" target="_blank"
+                        aria-label="前往 Antou 的 Youtube 頻道">https://www.youtube.com/@zaitw</a>
+                    <p>Youtube 頻道會上傳一些隨興拍的影片，娛樂影片，但也會有嚴肅的專題報導</p>
+                </li>
+                <li class="link-box">
+                    Facebook: <a href="https://www.facebook.com/ivantw829/" target="_blank"
+                        aria-label="前往 Antou 的 Facebook">https://www.facebook.com/ivantw829/</a>
+                    <p>Facebook 的貼文都是比較嚴肅專業的，如果想看我對社會議題的見解請追蹤 Facebook</p>
+                </li>
+                <li class="link-box">
+                    Threads: <a href="https://www.threads.net/@ivantw829" target="_blank"
+                        aria-label="前往 Antou 的 Threads">https://www.threads.net/@ivantw829</a>
+                    <p>ivan 很酷的點是他有時候會很理性有時候很情緒化然後有時候很抽象，捉摸不定，但也讓我很難確定他是誰，很酷。</p>
+                </li>
+                <li class="link-box">
+                    Instagram: <a href="https://www.instagram.com/ivantw829/" target="_blank"
+                        aria-label="前往 Antou 的 Instagram">https://www.instagram.com/ivantw829/</a>
+                    <p>會發我生活中的照片和限時動態，<s>如果你饞我身子，就是追蹤這裡</s></p>
+                </li>
+                <li class="link-box">
+                    Telegram: <a href="https://t.me/antoukun" target="_blank"
+                        aria-label="透過 Telegram 聯絡 Antou">https://t.me/antoukun</a>
+                    <p>透過 Telegram 聯絡我，回應速度跟 Discord 差不多，給那些注重資訊安全的人</p>
+                </li>
+                <li class="link-box">
+                    Email: <a href="mailto:a@antou.dev" aria-label="發送 Email 給 Antou">a@antou.dev</a>
+                    <p>你可以隨時透過 Email 聯繫我，我會在 48 小時之內回覆。<s>雖然但是 Discord 比較快</s></p>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        // 滾動時觸發淡入動畫
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.fade-in');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+
+            // 平滑滾動效果
+            const links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    const targetId = link.getAttribute('href').substring(1);
+                    const targetElement = document.getElementsByName(targetId)[0];
+
+                    if (targetElement) {
+                        const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

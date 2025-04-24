@@ -103,6 +103,27 @@
             margin-bottom: 10px;
             font-size: 0.9em;
         }
+
+        /* 置中的圖片樣式 */
+        .profile-image {
+            display: block;
+            max-width: 150px;
+            margin: 20px auto; /* 置中 */
+            border: 5px solid;
+            border-image-slice: 1;
+            border-width: 5px;
+            border-image-source: linear-gradient(45deg, #ffe600, #ff9800);
+            border-radius: 10px;
+        }
+
+        /* 文字方框樣式 */
+        .text-box {
+            border: 2px solid #ffe600;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: rgba(255, 230, 0, 0.1);
+            margin-top: 20px; /* 與圖片保持間距 */
+        }
     </style>
 </head>
 
@@ -112,11 +133,14 @@
         <section class="fade-in">
             <a name="introduction"></a>
             <h1>你好，我是 Antou</h1>
-            <p>大家好！我來自台灣宜蘭羅東，目前是一名高二的非學校型態實驗教育學生，專注於網路維運與資訊技術。</p>
-            <p>我對程式設計充滿熱情，熟悉 Python，並擔任<a href="https://ouoc.dev/" target="_blank">OuO Community</a>的負責人，致力於推動技術交流與社群發展。
-            </p>
-            <p>在政治立場上，我堅定支持台灣獨立，並身為<a href="https://newpowerparty.tw/" target="_blank">時代力量</a>的黨員，特別關注交通改革與社會議題。</p>
-            <p>我於 2008 年 8 月 29 日出生。如果你對我的理念或興趣感到共鳴，歡迎加入我的 <a href="#contacts">連結 / 聯絡資訊</a> 區塊，一起交流討論！</p>
+            <img src="https://i.imgur.com/os8cAyU.jpeg" alt="Antou 的照片" class="profile-image">
+            <div class="text-box">
+                <p>大家好！我來自台灣宜蘭羅東，目前是一名高二的非學校型態實驗教育學生，專注於網路維運與資訊技術。</p>
+                <p>我對程式設計充滿熱情，熟悉 Python，並擔任<a href="https://ouoc.dev/" target="_blank">OuO Community</a>的負責人，致力於推動技術交流與社群發展。
+                </p>
+                <p>在政治立場上，我堅定支持台灣獨立，並身為<a href="https://newpowerparty.tw/" target="_blank">時代力量</a>的黨員，特別關注交通改革與社會議題。</p>
+                <p>我於 2008 年 8 月 29 日出生。如果你對我的理念或興趣感到共鳴，歡迎加入我的 <a href="#contacts">連結 / 聯絡資訊</a> 區塊，一起交流討論！</p>
+            </div>
         </section>
 
         <!-- 政治立場區塊 -->
